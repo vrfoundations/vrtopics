@@ -2,11 +2,11 @@
 
 Welcome to _VR Topics_ , a friendly, wiki-style repository that introduces foundational virtual reality topics.
 
-You probably want to read the [Contents]
+You probably want to read the [Contents page](./Contents.md)
 
 # Key Resources
 
-Steve Levalles detailed and comprehensive VR notes are at [http://vr.cs.illinois.edu]
+Steve LaValle's detailed and comprehensive VR notes are at http://vr.cs.illinois.edu
 
 # Legal and License information
 
