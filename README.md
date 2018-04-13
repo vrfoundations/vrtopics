@@ -1,4 +1,4 @@
-# VR Topics
+# Welcome to VR Topics
 
 Welcome to _VR Topics_ , a friendly, wiki-style repository that introduces foundational virtual reality topics.
 
