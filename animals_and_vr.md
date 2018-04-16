@@ -26,19 +26,27 @@ https://en.wikipedia.org/wiki/Human_echolocation
 
 A VR experience that supported echolocation would need to reproduce accurately model the reflection of the emitted sound.
 This would be challenging to implement for dolphins because dolphins modify the subsequent emitted ultrasound pulses
-based on the previous echos. Thus a VR experience for a dolphin would need to sample the emitted pulse and create an accurate an accurate
-reflected sound based on the materials, position and orientation of the objects in the scene.
+based on the previous echos. Thus a VR experience for a dolphin would need to sample the emitted pulse, create an accurate 
+model of the reflected pulse based on the materials, relative position and orientation of the object(s) in the scene, and render the sound at the correct numer of milliseconds after the original pulse was emitted.
 
-## When is a red green and blue display insufficient?
+## When is a red, green, and blue display insufficient?
 
-Not for pollen-gathering insects! Though honey bees are also trichomatic like our eyes, the sensitivity of their 3 different photoreceptors extends into the high frequency ultraviolet (UV), which is not perceived by human eyes. Flowers can then use ultraviolet absorbing pigments to guide pollenators towards the pollen. As an example, here's the same petals when observed under UV compared to the same plant as observed in the human part of the visible spectrum
+This would be insufficient for pollen-gathering insects! Though honey bees for example, are also trichomatic like our eyes, the sensitivity of their 3 different photoreceptors extends into the high frequency ultraviolet (UV), which is not perceived by human eyes. 
+
+Flowers use ultraviolet absorbing pigments to guide pollenators towards the pollen. As an example, here's the same petals when observed under UV compared to the same plant as observed in the human part of the visible spectrum
 
 ![FlowerVisibleVsUVspectrum](http://howplantswork.files.wordpress.com/2008/11/merge.jpg?w=250&h=423&zoom=2)
 
 (Image attribution: howplantswork.wordpress.com)
 
+Pythons, boas, rattlesnakes and pit viper snakes can locate and track prey using infrared signature.
+
 ## Further reading and references
 
 https://www.sciencenews.org/article/birds-get-their-internal-compass-newly-id-eye-protein
+
+A. Pinzon-Rodriguez, S. Bensch and R. Muheim. Expression patterns of cryptochrome genes in avian retina suggest involvement of Cry4 in light-dependent magnetoreception (cryptochrome expression in zebra finches). Journal of the Royal Society Interface. Published online March 28, 2018. doi: 10.1098/rsif.2018.0058
+
+A. Günther et al. Double-cone localization and seasonal expression pattern suggest a role in magnetoreception for European robin cryptochrome 4. Current Biology. Vol. 28. January 22, 2018, p. 211. doi: 10.1016/j.cub.2017.12.003
 
 https://howplantswork.wordpress.com/2008/11/30/flowers-what-you-see-versus-what-the-bees-see/
