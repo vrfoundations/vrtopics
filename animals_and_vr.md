@@ -1,4 +1,4 @@
-# How can I build VR experience for my dog? A bird? My pet squid ...
+# Animals and VR
 
 Building an adequate virtual experience for non-humans requires a strong understanding of the physical, 
 perceptual and neurological systems that create their senses. 
