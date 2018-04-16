@@ -2,9 +2,9 @@
 (initial version based on Victor guest UIUC lecture 4/16/18)
 
 ## Best Practice Guides
-Unity https://unity3d.com/learn/tutorials/topics/virtual-reality/optimisation-vr-unity
-Oculus Best Practices Guide https://static.oculus.com/documentation/pdfs/intro-vr/latest/bp.pdf
-Microsoft https://docs.microsoft.com/en-us/windows/mixed-reality/best-practices-for-working-with-unity-and-visual-studio
+* Unity https://unity3d.com/learn/tutorials/topics/virtual-reality/optimisation-vr-unity
+* Oculus Best Practices Guide https://static.oculus.com/documentation/pdfs/intro-vr/latest/bp.pdf
+* Microsoft https://docs.microsoft.com/en-us/windows/mixed-reality/best-practices-for-working-with-unity-and-visual-studio
 
 ## Common mistakes
 * It is easy to create bad VR!
@@ -110,5 +110,13 @@ Don't rely on stereoscopic vision. Create interesting lighting with shadows and 
 ## Altitude
 
 Altitude strongly effects visual flow of pixel (e.g. low height racecar vs plane) 
+
+## Mirrors
+
+Real mirrors are not perfect. Add grime and specular components.
+
+## Gestures
+
+Keep gestures simple. The famous UI of Minority Report would be very tiring
 
 ## Further reading and references
