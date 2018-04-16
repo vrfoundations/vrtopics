@@ -9,11 +9,10 @@ This page details a few interesting case studies that have perceptual systems th
 
 Birds appear to use their eyes to sense magnetic compass orientation. The "Cry4" protein is sensitive to Earth's weak magnetic fields. The exact mechanism is still under active research.
 
-https://www.sciencenews.org/article/birds-get-their-internal-compass-newly-id-eye-protein
+If the Cry4 protein modulates the brightness in part of a bird's eye, it may be possible to mimic this effect when rendering the scene by changing the displayed color depending on the bird's head orientation.
 
-If the Cry4 protein modulates the brightness in part of the eye, it may be possible to mimic this effect when rendering the scene.
-Alternatively thetrue  Earth's magnetic field in a lab can be shielded and instead a magnetic field can be "displayed" 
-using a local set of electromagnets.
+Alternatively the true Earth's magnetic field in a lab can be shielded and instead a magnetic field can be created
+using a set of electromagnets.
 
 ## Echolocation - just as hard for VR as vision?
 
@@ -32,4 +31,13 @@ reflected sound based on the materials, position and orientation of the objects 
 
 ## Is a red green and blue display sufficient?
 
-Not for pollen-gathering insects! Todo talk about flowers and leaves in ultraviolet
+Not for pollen-gathering insects! Though honey bees are trichomatic like our eyes, the sensitivity of their photoreceptors extends into the ultraviolet. Flowers use ultraviolet absorbing pigments to guide pollenators towards the pollen.
+
+https://howplantswork.files.wordpress.com/2008/11/merge.jpg?w=250&h=423&zoom=2
+(From howplantswork.wordpress.com)
+
+## Further reading and references
+
+https://www.sciencenews.org/article/birds-get-their-internal-compass-newly-id-eye-protein
+
+https://howplantswork.wordpress.com/2008/11/30/flowers-what-you-see-versus-what-the-bees-see/
