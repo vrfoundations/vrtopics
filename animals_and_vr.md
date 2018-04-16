@@ -33,8 +33,9 @@ reflected sound based on the materials, position and orientation of the objects 
 
 Not for pollen-gathering insects! Though honey bees are also trichomatic like our eyes, the sensitivity of their 3 different photoreceptors extends into the high frequency ultraviolet (UV), which is not perceived by human eyes. Flowers can then use ultraviolet absorbing pigments to guide pollenators towards the pollen. As an example, here's the same petals when observed under UV compared to the same plant as observed in the human part of the visible spectrum
 
-https://howplantswork.files.wordpress.com/2008/11/merge.jpg?w=250&h=423&zoom=2
-(From howplantswork.wordpress.com)
+![FlowerVisibleVsUVspectrum](http://howplantswork.files.wordpress.com/2008/11/merge.jpg?w=250&h=423&zoom=2)
+
+(Image attribution: howplantswork.wordpress.com)
 
 ## Further reading and references
 
