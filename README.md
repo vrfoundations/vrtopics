@@ -4,9 +4,11 @@ Welcome to _VR Topics_, a friendly, wiki-style repository that introduces founda
 
 You probably want to read the [Contents page](./Contents.md)
 
-# Key Resources
+# Important Resources
 
 Steve LaValle's detailed and comprehensive VR notes are at http://vr.cs.illinois.edu
+
+Software tools and best practices can be found [here](Software-Tools.md) and [here](VR-Best-Practices.md)
 
 # Legal and License information
 
