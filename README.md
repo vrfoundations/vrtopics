@@ -14,4 +14,8 @@ Unless otherwise specified, submitted content to the repository must be original
 
 # Authors and recognition of work
 
-This project was created by Lawrence Angrave (at UIUC), to create a space where up-to-date and pedagogical materials can be created and shared. If you would like your contribution to this project to be recognized please add your name below.
+This project was created by Lawrence Angrave in 2018, to create a space where up-to-date and pedagogical materials can be created and shared. We'd like to thank all of the VR staff at UIUC that have contributed to this project. If you would like your authorship to be explicity recognized please add your name below.
+
+List of authors:
+
+* Lawrence Angrave
