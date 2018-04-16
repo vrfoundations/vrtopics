@@ -29,9 +29,9 @@ This would be challenging to implement for dolphins because dolphins modify the 
 based on the previous echos. Thus a VR experience for a dolphin would need to sample the emitted pulse and create an accurate an accurate
 reflected sound based on the materials, position and orientation of the objects in the scene.
 
-## Is a red green and blue display sufficient?
+## When is a red green and blue display insufficient?
 
-Not for pollen-gathering insects! Though honey bees are trichomatic like our eyes, the sensitivity of their photoreceptors extends into the ultraviolet. Flowers use ultraviolet absorbing pigments to guide pollenators towards the pollen.
+Not for pollen-gathering insects! Though honey bees are also trichomatic like our eyes, the sensitivity of their 3 different photoreceptors extends into the high frequency ultraviolet (UV), which is not perceived by human eyes. Flowers can then use ultraviolet absorbing pigments to guide pollenators towards the pollen. As an example, here's the same petals when observed under UV compared to the same plant as observed in the human part of the visible spectrum
 
 https://howplantswork.files.wordpress.com/2008/11/merge.jpg?w=250&h=423&zoom=2
 (From howplantswork.wordpress.com)
