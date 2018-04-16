@@ -1,4 +1,4 @@
-# Animals and VR
+# Animals And VR
 
 Building an adequate virtual experience for non-humans requires a strong understanding of the physical, 
 perceptual and neurological systems that create their senses. 
