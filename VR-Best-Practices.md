@@ -2,17 +2,29 @@
 (initial version based on Victor's guest UIUC lecture 4/16/18)
 
 ## Best Practice Guides
+
+There are several existing best practice guides that are worth reading and understanding.
 * Unity https://unity3d.com/learn/tutorials/topics/virtual-reality/optimisation-vr-unity
 * Oculus Best Practices Guide https://static.oculus.com/documentation/pdfs/intro-vr/latest/bp.pdf
 * Microsoft https://docs.microsoft.com/en-us/windows/mixed-reality/best-practices-for-working-with-unity-and-visual-studio
 
-## Common mistakes
-* It is easy to create bad VR!
-* Use a flexible event based programming structure. write `actionPerformed` type of function which will automagically called by event manager. rather than directly gluing the cause to the otput.
-`if(scene1victory) { startConfettiCanon(); fizzleSparkler();} etc`
+However it is still easy to create bad VR, so in addition to the above guides, let's take a look at some development tips and tricks and gotchas that can help create a good VR experience.
 
+## Loosely couple event sources to event listeners.
 
-## Instead Use C# delegates
+* When we first start creating apps we tightly bind our response to an event directly inside the game logic of the 3D object.
+For example we write code that tests for some condition and then conditionally executes some effect
+`C#
+...
+if(scene1victory) { 
+   startConfettiCanon();
+   fizzleSparkler();
+} `
+
+* We can improve on this structure by creating more generic `actionPerformed` function that will be automatically called by an event manager.
+
+Or better, we can use C# delegates to create pointers to useful code that we want to run in the future.
+
 ```C#
 delegate void MyDelegate (); // can point to a function that takes no arguments and returns nothing
 
@@ -22,13 +34,13 @@ MyD deleg = new MyDelegate(iWantToBeCalled);
 // Now I can run it
 deleg();
 ```
-and implement a Callback machine. This solves Non-blocking control flow, too many singletons, no need for global data, less messy code. Store a map a string (the event name) to array of delegates (the callbacks to be executed) then just implement two methods,
+Delegates become powerful when used as part of a Callback machine. The latter solves non-blocking control flow, too many singletons, no need for global data, less messy code. We store a map - a string (the event name) to array of delegates (the callbacks to be executed) then just implement two methods,
 
 `RegisterListener` - place delegate in the dictionary under an event name
 `TriggerEvent` - iterate and call each delegate associated with the event name
 
 # Other gotchas
-* Component structures that are too deep or too fluid! Strict class heirachies have their benefits.
+* Component structures can become too deep or too fluid! Strict class heirachies have their benefits.
 Loading resources as needed, and late runtime resolution and binding (Resources.Load, GameObject.Find) can lead to lag and delays which break immersion 
 * Learn and use more than one tool. Unity is a good tool but not necessarily the best for all creative tasks. There are other tools and platforms that can be part of your workflow.
 * Beware of the complexity of multiplayer and networked apps. Creating Networking applications is very hard. Reduce the complexity of the other components of your app to make it possible to complete in time
@@ -77,6 +89,7 @@ Supports hybrid sidestepping and teleporting. Teleporting implemented as a short
 
 
 ## Elite Dangerous
+
 Watch [Elite Dangerous VR](https://youtu.be/q9ijiChRTPw?t=362)
 
 Lots of deliberate visual obstructions to remind user that they are in vehicle.
@@ -126,5 +139,5 @@ Real mirrors are not perfect. Add grime and specular components.
 
 ## Gestures
 
-Keep gestures simple. The famous hand sweep gestures of the futuristic Minority Report UI would in practice be very tiring
+Keep gestures simple. The famous hand sweep gestures of the futuristic Minority Report UI in practice be very tiring
 
