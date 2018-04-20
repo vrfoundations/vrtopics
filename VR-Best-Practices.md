@@ -1,5 +1,5 @@
 # VR Best Practices
-(initial version based on Victor guest UIUC lecture 4/16/18)
+(initial version based on Victor's guest UIUC lecture 4/16/18)
 
 ## Best Practice Guides
 * Unity https://unity3d.com/learn/tutorials/topics/virtual-reality/optimisation-vr-unity
@@ -8,28 +8,28 @@
 
 ## Common mistakes
 * It is easy to create bad VR!
-* Use a flexible event based programming structure. write`actionPerformed` type of function which will automagically called by event manager. rather than directly gluing the cause to the otput.
+* Use a flexible event based programming structure. write `actionPerformed` type of function which will automagically called by event manager. rather than directly gluing the cause to the otput.
 `if(scene1victory) { startConfettiCanon(); fizzleSparkler();} etc`
 
 
-## Use C# delegates
+## Instead Use C# delegates
 ```C#
 delegate void MyDelegate (); // can point to a function that takes no arguments and returns nothing
 
-void iWantToBeCalled() { // does awesome stuff
+void iWantToBeCalled() { // does awesome stuff }
 
-MyD delege = new MyDelegate(iWantToBeCalled);
+MyD deleg = new MyDelegate(iWantToBeCalled);
 // Now I can run it
 deleg();
 ```
-## The Callback machine
+### And implement a Callback machine
 Solves Non-blocking control flow, too many singletons, no need for global data, less messy code
 
 Stores a map a string (the event name) to array of delegates (the callbacks to be executed)
-RegisterListener - place delegate in the dictionary under an event name
-TriggerEvent - iterate and call each delegate associated with the event name
+`RegisterListener` - place delegate in the dictionary under an event name
+`TriggerEvent` - iterate and call each delegate associated with the event name
 
-# Other Unity dangers
+# Other Unity concerns
 ## Fluid Component structures
 Strict class heirachies have their benefits
 Loading resource as needed, dynamic resultions
@@ -39,19 +39,22 @@ Loading resource as needed, dynamic resultions
 
 ## Mountain Goat VR
 
-Todo youtube link
-Elastic camera. Constant changing acceleration of camera. Does not seem to benefit from VR; no UI, no touch interaction.
+Watch the Mountain Goat VR [trailer](https://www.youtube.com/watch?v=QO0fPdtgCzA).
+
+Critique: Elastic camera movements - Constantly changing acceleration of camera. Experience does not seem to benefit from VR or make use of VR; no UI and no touch interaction.
 
 ## Lucky's tail VR
-Todo youtube link
 
-3D platform games carefully control the camera. In VR, user-controlled camera control makes it harder to judge distance.
+https://youtu.be/ckoBveWQuO0?t=259
+
+3D platform games carefully control the camera. In VR, user-controlled camera control can make it harder to judge distance.
 
 ## Testing concerns
 Testing is expensive. Testers usually don't identify issues directly. e.g. "Camera is cutting" -> "It made me sick"
 
 ## Minimizing Latency
-* FSP can't drop no matter what
+
+* Frames per second can't drop no matter what
 * Games wih sandbox elements might have some issues. Add constraints
 
 ## Accelerations
@@ -63,34 +66,43 @@ Testing is expensive. Testers usually don't identify issues directly. e.g. "Came
 
 ### Case study - Robo recall game. 
 
+Watch the player movement and UI controls in [Robo recall](https://youtu.be/r6oVPTs29-k?t=349)
+
 Visual effects to prepare player for teleportation. Teleportation effect fades to white then fades back in.
-Some confusion about orientation after teleportation. The indicator indicates orientation as if player is at zero orientation.
+Some confusion about orientation after teleportation. The post-teleportation orientation indicator is confusing since it indicates orientation as if player is at zero orientation, rather than the actual final orientation of the player.
 
 ### Case study - DOOM
-Hybrid sidestepping and teleporting. Teleporting implemented as a short continuous motion dash. Maintains orientation. It is a trade-off -still some sickness effects after 30 minutes play. 
 
-## Reduce Field of view
-"The less they see, the less they feel"
+Watch the player movement and controls in [Doom VFR](https://youtu.be/8sehL54LM74?t=56)
+Supports hybrid sidestepping and teleporting. Teleporting implemented as a short continuous motion dash. Maintains orientation. Fun and immersive but it is a trade-off - some VR sickness effects after 30 minutes of play. 
+
+## 
+
 
 ### Case study Elite Dangerous
+Watch [Elite Dangerous VR](https://youtu.be/q9ijiChRTPw?t=362)
+
 Lots of deliberate visual obstructions to remind user that they are in vehicle.
 Interesting hybrid approach. If you the player looks up there is a greater field of view.
 
+Key takeaway, Reduce Field of view can be a powerful design decision - "The less they see, the less they feel"
+
 ## Movement schemes
-Movement inline with the viewing dir is optional.
+
+Movement inline with the viewing direction is optional.
 Preparing the body for movement goes a long way
 
 Case study - Sprint vector game
-Breaks traditional rules but not uncofrtable. Tricks -
 
-Large physical arm movement
-Superman arms when traveling through air
+Watch [Sprint vector game](https://youtu.be/43r17ZtaSzg?t=1268)
+
+Breaks traditional visual rules but not uncomfortable because of proprioception Tricks - Large physical arm movement when running and move to superman arms when launching to fly through the air.
 
 ## Third-person cameras
 
 Subject to the same accelerations as first person
 Camera swings can be large than first person when following another object
-We lose some F of V control
+We lose some Field of View control
 Big advantage: We can decouple camera from avatar movement
 Flight sims can benefit from this. e.g. if plane is rolling, you don't need to roll the third person camera!
 
