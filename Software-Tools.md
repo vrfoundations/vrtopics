@@ -1,7 +1,7 @@
 
 ## Recommended VR world creation tools
 
-We recommend Unity. Unity provides many introductory video tutorials, comprehensive documentation, examples and additional downloadable assets.
+For beginners to VR development we recommend Unity. Unity provides many introductory video tutorials, comprehensive documentation, examples and additional downloadable assets. It includes a script programming interface and a drag and drop interface to create and populate your 3D world.
 
 * [Unity 3D](https://unity3d.com/)
 
@@ -11,7 +11,7 @@ The unreal engine provides more customization and is often the graphics platform
 
 ## Web-based VR development
 
-"Aframe" is a great starting point to create Web-based VR experiences for a wide set of VR headsets and platforms
+The "Aframe" projectis a great starting point to create Web-based VR experiences for a wide set of VR headsets and platforms
 
 * https://aframe.io/
 
