@@ -1,4 +1,4 @@
-# VR Best Practices
+# VR Best Practices, tips and ideas
 (initial version based on Victor's guest UIUC lecture 4/16/18)
 
 ## Best Practice Guides
