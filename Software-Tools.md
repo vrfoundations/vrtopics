@@ -39,9 +39,11 @@ The following commercial software may be available for free at your school or th
 * [Autocad](https://www.autodesk.com/products) by Autodesk
 * [3D Studio Max](https://www.autodesk.com/products/3ds-max/overview)
 
-# 3D models and esources
+# 3D models and textures
 
-Unity offers free and paid resources at the [Unity Asset Store](https://assetstore.unity.com/).
+Free and paid resources can be found at [free3d.com](https://free3d.com/3d-models/) and the [Unity Asset Store](https://assetstore.unity.com/). There are many other free and paid resources just a quick web search away.
+
+Simple 3D environments can greatly benefit from bumpmaps and textures. Again there are many resources which can be quickly found through a web search. In addition to the textures included in Unity example projects, high quality textures can be downloaded from [freestocktextures.com](https://freestocktextures.com/)
 
 # Audio samples and resources
 
