@@ -1,3 +1,6 @@
+# Software tools and assets
+
+The following is a list of low-priced (often free) resources that can be great starting points for your adventures in creating VR content. 
 
 ## Recommended VR world creation tools
 
