@@ -6,8 +6,13 @@
 
 ## VR in the web
 
-Todo recommend .js libraries
-Todo VR in the browser e.g. Firefox reality
+"Aframe" is a great starting point to create Web-based VR experiences for a wide set of VR headsets and platforms
+
+* https://aframe.io/
+
+Lastly there is the experimental Firefox API "webVR" -
+
+* [Firefox WebVR](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API)
 
 ## 3D model creation
 
