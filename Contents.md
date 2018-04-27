@@ -6,5 +6,5 @@ Sense organs
 
 VR Development 
 * [Software Tools and Assets](./Software-Tools-Assets.md)
-* [VR Best Practices](./VR-Best-Practices.md)
+* [Victor's VR Best Practices](./Victors-VR-Best-Practices.md) and [Review Questions](Victors-VR-Best-Practices-ReviewQuestions.md)
 * [Oculus Best Practices Review Questions](./Oculus-Best-Practices-Review-Questions.md)
