@@ -1,5 +1,5 @@
 # Towards physical realism in VR environments
-Lawrence Angrave's Guest VR Lecture Oct 17, 2018
+Lawrence Angrave's Guest VR Lecture Oct 17, 2018 and Oct 23, 2019
 
 How can we create a shared VR immersive realistic emotive experience?
 
@@ -66,8 +66,7 @@ Precomputed Wave Simulation for Real-Time Sound Propagation of Dynamic
 Sources in Complex Scenes (Microsoft Research 2016)
 
 
-I also wanted to show a portion of this video expressing emotions and
-facial muscles-
+Expressing emotions and facial muscles, using a neural net-
 
 https://youtu.be/Aj-zNjff7wY?t=1804
 Believable Humans (GDC 2015)
